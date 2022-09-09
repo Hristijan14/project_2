@@ -1,0 +1,12 @@
+.span-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.span-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}

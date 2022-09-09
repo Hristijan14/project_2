@@ -1,0 +1,24 @@
+.note-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.themeIcon {
+  width: 30px;
+  height: 30px;
+}
+.addNote-btn {
+  margin: 25px 0;
+}

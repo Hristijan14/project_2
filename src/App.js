@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NoteBook from "./components/noteBook/NoteBook";
+import NoteBookContent from "./components/noteBookContent/NoteBookContent";
+import { useSelector } from "react-redux";
+import { selectDarkMode } from "./redux/themeSlice";
 
 function App() {
+  const darkMode = useSelector(selectDarkMode);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${!darkMode ? "whiteBg" : ""}`}>
+      <div className="app-container">
+        <NoteBook />
+        <div className="app-noteBookContent">
+          <NoteBookContent />
+        </div>
+      </div>
     </div>
   );
 }
